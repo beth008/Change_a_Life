@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h1 class="logo">CHANGE A LIFE</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html" class="active">Team</a></li>
+            <li><a href="add-project.html">Add Project</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="jointeamform">
+            <h3>JOIN OUR TEAM</h3>
+            <div>
+                <label for="firstname">First Name: </label>
+                <input id="firstname" name="firstname" type="firstname">
+            </div>
+            <br>
+
+            <div>
+                <label for="lastname">Last Name: </label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label for="country">Country: </label>
+                <input type="text" id="country" name="country">
+            </div>
+            <br>
+
+            <button for="submit">JOIN</button>
+
+            <p id="formMessage" role="status"></p>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Contact us on: 0777783925 / 1-980-875-5674. Address: Luwum Street 23rd Avenue. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

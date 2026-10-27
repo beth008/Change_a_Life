@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #e1afb0;
+    flex-direction: column;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d8c3a5;
+    padding: 15px 30px;
+    flex-direction: row;
+}
+
+.logo {
+    font-size: 29px;
+    margin: 0;
+}
+
+.nav-links {
+    flex-direction: row;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #778f37;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5c3a2e;
+
+}
+
+h2 {
+    text-align: center;
+    font-style: oblique;
+}
+
+main {
+    flex: 1;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.hero-content {
+    width: 40%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 24px;
+    min-width: none;
+}
+
+.hero-image {
+    width: 100%;
+    min-width: none;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    float: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.imageslider {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.imageslider h3 {
+    margin-bottom: 20px;
+}
+
+.slidecontainer {
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slidecontainer img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: opacity 5s ease;
+    display: block;
+}
+
+/*This is for the about,html page*/
+.aboutpage {
+    background-color: #fff0f5;
+    padding: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    line-height: 1.8;
+    box-shadow: 0 8px 25px rgba(142, 58, 89, 0.15);
+    border: 1px solid #f2c6d4;
+}
+
+h4 {
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+
+/*this is for the team.html*/
+h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#jointeamform {
+    background-color: #fff5e8;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#jointeamform input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+#jointeamform button {
+    border-radius: 10px;
+    background-color: rgb(182, 128, 182);
+    margin: 15px auto;
+    padding: 15px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#formMessage {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#jointeamform button:hover {
+    background-color: rgb(132, 221, 224);
+}
+
+/*Add Project*/
+a {
+    font-size: 28px;
+}
+
+#projectform {
+    background-color: #fff5e8;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#projectform input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+#projectform button {
+    border-radius: 10px;
+    background-color: rgb(182, 128, 182);
+    margin: 15px auto;
+    padding: 15px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#projectMessage {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#projectform button:hover {
+    background-color: rgb(132, 221, 224);
+}
+
+/*projects.html*/
+
+#projectslist {
+    max-width: 700px;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+
+#projectslist p {
+    text-align: left;
+    margin: 8px 0;
+    font-size: large;
+}
+
+#projectslist>div {
+    background-color: #fff5f8;
+    border: 1px solid #e276a2;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer {
+    background-color: rgb(219, 163, 219);
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/*RESPONSIVE SECTION*/
+
+@media screen and (max-width: 300px) {
+    .hero {
+        gap: 25px;
+    }
+
+    .hero-content {
+        width: 50%;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #projectsList {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Home page hero */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .hero-content,
+    .hero-image {
+        flex: 1;
+        width: 100%;
+        height: 450px;
+        min-width: 0;
+        overflow: hidden;
+        border-radius: 30px;
+        margin: 20px auto;
+    }
+
+    .hero-image {
+        height: 450px;
+    }
+
+    .hero-content {
+        text-align: center;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .hero-image img {
+        width: 100px;
+        height: 100px;
+        max-height: 350px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .act {
+        width: 100%;
+    }
+
+    .slidecontainer {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .slidecontainer img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* About Us page */
+    .aboutpage {
+        width: auto;
+        max-width: 100%;
+        margin: 15px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .aboutpage h4 {
+        font-size: 23px;
+    }
+
+    /* Project cards */
+    #projectsList {
+        width: auto;
+        max-width: 100%;
+        margin: 15px auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #projectsList>div {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* General form controls */
+    input,
+    textarea,
+    select,
+    button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}

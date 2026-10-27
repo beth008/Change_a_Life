@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h1 class="logo">CHANGE A LIFE</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="add-project.html" class="active">Add Project</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Add A Charity Project</h1>
+        <form id="projectform">
+            <label for="projectname"> Project Title: </label>
+            <input type="text" id="projectname" required>
+
+            <label for="projectdescription"> Project Description: </label>
+            <input type="text" id="projectdescription" required>
+
+            <label for="projectlocation"> Where: </label>
+            <input type="text" id="projectlocation" required>
+
+            <button type="submit">Project submission</button>
+            <p id="projectMessage"></p>
+        </form>
+        <a href="projects.html">View Projects</a>
+    </main>
+    <footer class="footer">
+        <p>&copy; Contact us on: 0777783925 / 1-980-875-5674. Address: Luwum Street 23rd Avenue. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
